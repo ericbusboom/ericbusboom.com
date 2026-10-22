@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+<meta name="robots" content="noindex">
+<script>
+// ericbusboom.com has no content of its own; every path is sent to its new home.
+// GitHub Pages serves this file as both index.html and 404.html.
+(function () {
+    var p = location.pathname, rest = location.search + location.hash;
+    // ericbusboom.com was merged into eric.busboom.org; its home page is
+    // /professional/ there and its other paths are the same.
+    var base = "https://eric.busboom.org";
+    location.replace(base + (p === "/" ? "/professional/" : p + rest));
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://eric.busboom.org/professional/"></noscript>
+</head>
+<body><p>This site has moved to <a href="https://eric.busboom.org/professional/">https://eric.busboom.org/professional/</a>.</p></body>
+</html>
